@@ -8,6 +8,7 @@ const app = express();
 app.get('/', (req, res) => {
 
   res.header('CDN-Cache-Control', `max-age=${15}`);
+  res.header('Cache-Control', `max-age=${15}`);
 
   console.log(req.originalUrl, 'data');
   res.json({ ok: true });
