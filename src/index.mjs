@@ -36,7 +36,6 @@ app.get('/purge/:tag', async (req, res) => {
   res.json({ ok: true, content });
 });
 
-
 app.listen(process.env.PORT || 8080, () => {
   console.log('listen on http://localhost:' + (process.env.PORT || 8080));
-})
+});
